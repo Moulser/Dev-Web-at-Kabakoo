@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- le titre de la page -->
+    <title>Le Formulaire</title>
+<body>
+    <h1> Créer mon formulaire </h1>
+    <p> Lorsqu'il vous prend subitement l'envie d'insérer un formulaire dans votre page HTML, vous devez pour 
+        commencer écrire une balise <b>form</b> et <b>/form</b>. C'est la balise principale du formulaire, elle permet d'en 
+        indiquer le début et la fin.
+    </p>
+    <!-- Formule de Base -->
+    <b> EX: </b> <br> 
+    <b> form </b> <br>
+        <b>p</b> Texte à l'intérieur du formulaire <b>/p</b> <br>
+        <b> /form </b>
+    <!-- Formule plus cpmplèle -->
+    <p><b> EX :</b> <br>
+        <b>form <mark>method="post" action="traitement.php"</mark></b> <br>
+        <b>p</b> Texte à l'intérieur du formulaire <b>/p</b> <br>
+        <b> /form </b>
+    </p>
+    <h2>Les Zones de textes Basiques</h2>
+    <ul>
+        <li> La zone de texte monoligne :</li>
+        <div>Comme son nom l'indique, on ne peut y écrire qu'une seule ligne. Elle 
+            sert à saisir des textes courts, par exemple un pseudo.</div> <br>
+        <li>La zone de texte multiligne :</li>
+        <div>Cette zone de texte permet d'écrire une quantité importante de texte sur 
+            plusieurs lignes, par exemple une dissertation sur l'utilité du HTML dans le développement des pays 
+            d'Asie du Sud-Est (ce n'est qu'une suggestion hein…).</div>
+    </ul>
+    <h3>La zone de texte monoligne </h3>
+    <form method="post" action="traitement.php">
+        <p>
+        <label for="pseudo">Votre pseudo :</label>
+        <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Zozor" size="30" maxlength="10" />
+        </p>
+       </form>
+       <!-- J'ajoute une zone pour le moyt de passe -->
+    <h4>La Zone de mot de passe </h4>
+    <form method="post" action="traitement.php">
+        <p>
+        <label for="pass">Votre mot de passe :</label>
+        <input type="password" name="pass" id="pass" />
+        </p>
+       </form>
+    <h5>Zone de texte multiligne</h5>
+    <form method="post" action="traitement.php">
+        <p>
+        <label for="ameliorer">Comment pensez-vous que je pourrais améliorer 
+       mon site ?</label><br />
+       <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+        Améliorer ton site ?!
+        Mais enfin ! Il est tellement génialissime qu'il n'est pas 
+       nécessaire de l'améliorer !
+        </textarea> 
+        </p>
+       </form>
+
+</body>

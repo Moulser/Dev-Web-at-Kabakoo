@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Ma Page HTML</title>
+    <link rel="shortcut icon" href="logo Cours-html.png">
+    <link rel="stylesheet" href="code-pourTableau.CSS" />
+</head>
+<body>
+<h1>Sommaire</h1>
+<p> <a href="#Qui suis-je ?">Qui suis-je ?</a></p>
+<p> <a href="#Pourquoi je pense que kabakoo est une aubaine ?">Pourquoi je pense que kabakoo est une aubaine ?</a></p>
+<p> <a href="#Tableau">Tableau</a></p>
+<p> <a href="#Formulaire">Formulaire</a></p>
+<p> <a href="#Liste">Liste </a></p>
+
+<h2 id="Qui suis-je ?">Qui suis-je ?</h2>
+<p>Hé bien je suis Sy Moulaye, âgé de 20 ans et comme formation je peut-être qualifié de 
+Technicien réseau et télecommunication. je suis passionné de technologie et d'histoire.<br>
+Ci-joint, Moi </p>
+<p><img src="WhatsApp Image 2023-04-20 at 17.36.12.jpeg" alt="Ma photo" height="300"</p>
+<h3 id="Pourquoi je pense que kabakoo est une aubaine ?">Pourquoi je pense que kabakoo est une aubaine ?</h3>
+<p>En fait il n'y a rien à dire Kabakoo est une lumière pour tous les jeunes maliens, allez voir leur app<br>
+<strong>Cliquez sur le lien: </strong><a href="https://Kabakoo.africa" title="Vous ne le regretterez pas"> Kabakoo.Mali  </a> </p>
+
+<h5 id="Formulaire">Formulaire </h5>
+<p> Lorsqu'il vous prend subitement l'envie d'insérer un formulaire dans votre page HTML, vous devez pour 
+    commencer écrire une balise <b>form</b> et <b>/form</b>. C'est la balise principale du formulaire, elle permet d'en 
+    indiquer le début et la fin.
+</p>
+<!-- Formule de Base -->
+<b> EX: </b> <br> 
+<b> form </b> <br>
+    <b>p</b> Texte à l'intérieur du formulaire <b>/p</b> <br>
+    <b> /form </b>
+<!-- Formule plus cpmplèle -->
+<p><b> EX :</b> <br>
+    <b>form <mark>method="post" action="traitement.php"</mark></b> <br>
+    <b>p</b> Texte à l'intérieur du formulaire <b>/p</b> <br>
+    <b> /form </b>
+</p>
+<p>
+    <em>Les Zones de textes Basiques</em>
+<ul>
+    <li> La zone de texte monoligne :</li>
+    <div>Comme son nom l'indique, on ne peut y écrire qu'une seule ligne. Elle 
+        sert à saisir des textes courts, par exemple un pseudo.</div> <br>
+    <li>La zone de texte multiligne :</li>
+    <div>Cette zone de texte permet d'écrire une quantité importante de texte sur 
+        plusieurs lignes, par exemple une dissertation sur l'utilité du HTML dans le développement des pays 
+        d'Asie du Sud-Est (ce n'est qu'une suggestion hein…).</div>
+</ul>
+</p>
+<p>
+    <em>La zone de texte monoligne</em>
+<form method="post" action="traitement.php">
+    <p>
+    <label for="pseudo">Votre pseudo :</label>
+    <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Zozor" size="30" maxlength="10" />
+    </p>
+   </form>
+</p>
+   <!-- J'ajoute une zone pour le moyt de passe -->
+<p>
+    <em>La Zone de mot de passe</em>
+    <form method="post" action="traitement.php">
+        <p>
+        <label for="pass">Votre mot de passe :</label>
+        <input type="password" name="pass" id="pass" />
+        </p>
+       </form></p>
+<p>
+    <em>Zone de texte multiligne</em>
+    <form method="post" action="traitement.php">
+        <p>
+        <label for="ameliorer">Comment pensez-vous que je pourrais améliorer 
+       mon site ?</label><br />
+       <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+        Améliorer ton site ?!
+        Mais enfin ! Il est tellement génialissime qu'il n'est pas 
+       nécessaire de l'améliorer !
+        </textarea> 
+        </p>
+       </form></p>
+<h6 id="Liste">Liste</h6>
+<p>Les listes nous permettent souvent de mieux structurer notre texte et d'ordonner nos informations.
+    Nous allons découvrir ici deux types de listes :</p>
+<p> 
+    <ul>
+         <li>les listes non ordonnées ou listes à puces ;</li>
+         <li>les listes ordonnées ou listes numérotées ou encore énumérations.</li>
+    </ul>
+</p>
+<p><em>les listes non ordonnées ou listes à puces</em></p>
+<p>
+    Une liste non ordonnée ressemble à ceci :
+    <ul>
+        <li>Fraises</li>
+        <li>Framboises</li>
+        <li>Cerises</li>
+    </ul>
+</p>
+<p>
+C'est un système qui nous permet de créer une liste d'éléments sans notion d'ordre (il n'y a pas de « premier » ni 
+de « dernier »). Créer une liste non ordonnée est très simple. Il suffit d'utiliser la balise <b>ul</b> que l'on referme un 
+peu plus loin avec <b>/ul</b>.
+Commencez donc à taper ceci : <em>Balise paire <b>ul</b> et <b>/ul</b></em>
+</p>
+<p>
+    Et maintenant, voilà ce qu'on va faire : on va écrire chacun des éléments de la liste entre deux balises 
+    <b>li</b> et <b>/li</b>. Chacune de ces balises doit se trouver entre <b>ul</b> et <b>/ul</b>. Vous allez comprendre de suite 
+     avec cet exemple:
+     <div><b>ul</b> <br>
+        <b>li</b> Fraises <b>/li</b><br>
+        <b>li</b> Fraises <b>/li</b><br>
+        <b>li</b> Fraises <b>/li</b><br>
+    <b>/ul</b>
+</div>
+<p><em>Résultat</em></p>
+<p>
+    <ul>
+        <li>Fraises</li>
+        <li>Fraises</li>
+        <li>Fraises</li>
+    </ul>
+</p>
+</p>
+<p><em>Liste ordonnée</em></p>
+Une liste ordonnée fonctionne de la même façon, seule une balise change : il faut remplacer la Balise ul et /ul> <b>ul</b> et <b>/ul</b>par 
+<b>ol</b> et <b>/ol</b>
+À l'intérieur de la liste, on ne change rien : on utilise toujours des balises <b>li</b> et <b>/li</b> pour délimiter les 
+éléments.
+<p>Comme c'est particulièrement intuitif, je vous laisse admirer la simplicité de cet exemple :</p>
+
+<div>
+    <b>ol</b> <br>
+    <b>li</b> Je me lève. <b>/li</b><br>
+    <b>li</b> Je mange et je bois. <b>/li</b><br>
+    <b>li</b> Je retourne me coucher. <b>/li</b><br>
+    <b>/ol</b>
+</div>
+<p><em>Résultat</em></p>
+<p>
+    <ol>
+        <li>Je me lève.</li>
+        <li>Je mange et je bois.</li>
+        <li>Je retourne me coucher.</li>
+    </ol>
+</p>
+<h4 id="Tableau">Tableau</h4>
+<p><em>Les Tableaux simples </em></p>
+    <table>
+        <caption> Liste de mes Amis </caption>
+        <tr>
+            <th> Nom </th>
+            <th> Prénom </th>
+            <th> âge </th>
+            <th> Pays </th>
+        </tr>
+        <tr> 
+            <td> SY </td>
+            <td> Moulaye </td>
+            <td> 20 </td>
+            <td> Mali </td>
+        </tr>
+        <tr> 
+            <td> Djiré </td>
+            <td> Mamadou </td>
+            <td> 21 </td>
+            <td> Mali </td>
+        </tr>
+        <tr> 
+            <td> Asogbavi </td>
+            <td> Olivier </td>
+            <td> 27 </td>
+            <td> Togo </td>
+        </tr>
+    </table>
+    <p><em> Les Tableaux complexes </em> </p>
+    <table>
+            <caption>Passagers du vol 377</caption>
+            <thead> <!-- En-tête du tableau -->
+            <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+            <th>Pays</th>
+            </tr>
+            </thead>
+            <tfoot> <!-- Pied de tableau -->
+            <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+            <th>Pays</th>
+            </tr>
+            </tfoot>
+            <tbody> <!-- Corps du tableau -->
+            <tr>
+            <td>Carmen</td>
+            <td>33 ans</td>
+            <td>Espagne</td>
+            </tr>
+            <tr>
+            <td>Michelle</td>
+            <td>26 ans</td>
+            <td>États-Unis</td>
+            </tr>
+            <tr>
+            <td>François</td>
+            <td>43 ans</td>
+            <td>France</td>
+            </tr>
+            <tr>
+            <td>Martine</td>
+            <td>34 ans</td>
+            <td>France</td>
+            </tr>
+            <tr>
+            <td>Jonathan</td>
+            <td>13 ans</td>
+            <td>Australie</td>
+            </tr>
+            <tr>
+            <td>Xu</td>
+            <td>19 ans</td>
+            <td>Chine</td>
+            </tr>
+            </tbody
+    </table>
+</body>
+</html>

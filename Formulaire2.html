@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- le titre de la page -->
+    <title> Formulaire TP </title>
+ <script defer src="test.js"></script>
+</head>
+<body>
+    <p><b>Si vous voulez vous inscrire sur notre site web, <br>
+        merci de remplir ce formulaire</b> </p>
+        <form>
+            <p>
+            <label for="name">Votre nom :</label>
+            <input type="text" name="nom" id="name" placeholder="Votre Nom" size="30" maxlength="10" />
+            </p>
+        </form>
+        <form>
+            <p>
+            <label for="email">Votre email:</label>
+            <input type="email" name="email" id="email" placeholder="Votre email" size="30" maxlength="10" />
+            </p>
+        </form>
+        <form>
+            <p>
+            <label for="pass">Votre mot de passe :</label>
+            <input type="password" name="pass" id="pass" placeholder="Votre mot de passe" size="30" maxlength="10"/>
+            </p>
+        </form>
+        <form>
+            <p>
+            <label for="pass"> Confirmez le mot de passe :</label>
+            <input type="password" name="pass" id="pass" placeholder="Confirmez le mot de passe" size="30" maxlength="10" />
+            </p>
+        </form>
+        <form>
+            <p>
+            <label for="biographie"> Votre biographie</label><br />
+           <textarea name="biographie" id="biographie" rows="10" cols="50">Saisissez votre biographie ici 
+           </textarea> 
+            </p>
+        </form>
+           <p>où as-tu connu notre site ?</p>
+           <form>
+            <p>
+            <input type="checkbox" name="moteur de recherche" id="moteur de recherche" /> <label
+           for="moteur de recherche">moteur de recherche</label>
+            </p>
+        </form>
+        <form>
+            <p>
+            <input type="radio" name="bouche à oreille" value="bouche à oreille" id="bouche à oreille" />
+           <label for="bouche à oreille">bouche à oreille </label>
+            </p>
+        </form>
+        <form>
+                <p>
+                <input type="radio" name="autre" value="autre" id="autre" />
+               <label for="autre">bouche à oreille </label>
+                </p>
+        </form>
+        <form>
+                    <p>
+                    <label for="île"> Sélectiponner votre île :</label><br />
+                    <select name="île" id="île">
+                    <option value="Ngazidja">Ngazidja</option>
+                    <option value="Madagascar">Madagascar</option>
+                    </select>
+                    </p>
+                    <input type="file" value="Choisissez un fichier" />
+                    <input type="submit" value="Envoyer" />
+                    <p><button id="essai"> essai </button>
+                    </p>
+        </form>
+
+</body>
